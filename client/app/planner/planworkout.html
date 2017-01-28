@@ -1,6 +1,6 @@
 <!-- Keep this file for a backup -->
 
-<form ng-submit="add()" ng-controller="PlannerCtrl" ng-style="{'background': 'rgba(204, 204, 204, 0.5)'}">
+<form ng-submit="add()" ng-controller="PlannerCtrl" ng-style="{'background': 'rgb(204, 204, 204)', 'background': 'rgba(204, 204, 204, 0.5)'}">
   <div>
     <div>
       <div>
@@ -25,7 +25,7 @@
       <input id="exerciseName" type="text" value="{{exercise.name}}" readonly>
       <input id="numOfSets" placeholder="Number of Sets" ng-model="exercise.sets">
       </input>
-      <input id="numOfReps" placeholder="Number of Reps" ng-model="exercise.reps" value = "20">
+      <input id="numOfReps" placeholder="Number of Reps" ng-model="exercise.reps">
       </input>
       <input id="weightTarget" placeholder="Target Weight" ng-model="exercise.targetWeight">
       </input>
@@ -33,14 +33,13 @@
       </input>
     </div>
   </div>
+  <div>
+    <!-- Add in ng-click to send post request -->
+    <button type="button">Log This Workout!</button>
+  </div>
 </form>
 
 
-<div>
-  <br>
-  <!-- Add in ng-click to send post request -->
-  <button type="button">Log This Workout!</button>
-</div>
 
     <!-- This is the input box for type of workout -->
     <!--Removed for now
